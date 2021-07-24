@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@onflow/fcl": "^0.0.76",
+    "@onflow/types": "^0.0.5",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -15,7 +17,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev-wallet": "PK=ef36c09f677e2327159ffbdfc73bedb2b94d5888e75926471f5d7663812f1db5 SERVICE_ADDR=f8d6e0586b0a20c7 fcl-wallet"
   },
   "eslintConfig": {
     "extends": [
