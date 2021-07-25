@@ -2,9 +2,12 @@ import './App.css';
 
 import * as fcl from "@onflow/fcl"
 
+// prettier-ignore
 fcl.config()
+  // Point App at Emulator
   .put("accessNode.api", "http://localhost:8080")
-  .put("challenge.handshake", "http://localhost:8701/flow/authenticate")
+  // Point FCL Wallet Discovuer at Dev Wallet
+  .put("discovery.wallet", "http://localhost:3000/fcl/authn") // with default port configuration
 // .put("accessNode.api", "https://access-testnet.onflow.org") // Flow testnet
 // .put("challenge.handshake", "https://flow-wallet-testnet.blocto.app/authn")
 
